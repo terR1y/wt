@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./task2.html" class="arrow"></a>
+    </header>
+    <main class="_form-main _form-2">
+      <form action="./form_sent.html">
+        <table>
+          <caption>
+            реєстрація
+          </caption>
+          <tr>
+            <th><h3>логін:</h3></th>
+            <td><input type="text" required /></td>
+          </tr>
+          <tr>
+            <th><h3>пароль:</h3></th>
+            <td><input type="password" required /></td>
+          </tr>
+          <tr>
+            <th><h3>повторіть пароль:</h3></th>
+            <td><input type="password" required /></td>
+          </tr>
+          <tr>
+            <th><h3>стать:</h3></th>
+            <td class="gender-pool">
+              <label for="woman">
+                <input type="radio" name="gender" /> жінка
+              </label>
+
+              <label for="man">
+                <input type="radio" name="gender" /> чоловік
+              </label>
+
+              <label for="other"
+                ><input type="radio" name="gender" /> інше
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th><h3>вкажіть місто:</h3></th>
+            <td>
+              <select name="citys" required>
+                <option value="" disabled selected hidden>--</option>
+                <option value="Zaporizhia">Запоріжжя</option>
+                <option value="Zhytomyr">Житомир</option>
+                <option value="Vinnytsia">Вінниця</option>
+                <option value="Khmelnytskyi">Хмельницький</option>
+                <option value="Ivano-Frankivsk">Івано-Франківськ</option>
+                <option value="Odessa">Одесса</option>
+                <option value="Chernihiv">Чернігів</option>
+                <option value="Rivne">Рівне</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th><h3>інтереси:</h3></th>
+            <td>
+              <label for="books"><input type="checkbox" />книги</label>
+              <label for="drawing"><input type="checkbox" />малювання</label>
+              <label for="книги"><input type="checkbox" />в'язання</label>
+              <label for="книги"><input type="checkbox" />спорт</label>
+            </td>
+          </tr>
+        </table>
+        <button type="reset">очистити</button>
+        <button type="submit">надіслати</button>
+      </form>
+    </main>
+  </body>
+</html>

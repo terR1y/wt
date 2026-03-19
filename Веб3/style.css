@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+*::selection {
+  background: #f8e1eb;
+  color: #7a1d35;
+}
+
+body h1,
+body h2,
+body h3,
+body caption {
+  font-family: "Montserrat", sans-serif;
+  color: #7a1d35;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+body p {
+  font-family: "Roboto Slab", serif;
+  color: #4a0e1c;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+body p span {
+  color: #a63d59;
+}
+body header {
+  height: 120px;
+  width: 100vw;
+  padding: 20px;
+  background-image: url(./img/bgi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 40px;
+}
+body header a {
+  width: 80px;
+}
+body header a:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(5px 5px 5px #a63d59);
+}
+body header .home {
+  background-image: url(./img/icon/home-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header .arrow {
+  background-image: url(./img/icon/arrow-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header div {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+body header div a {
+  width: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header div a:hover img {
+  transform: translateY(-5px);
+  filter: drop-shadow(5px 5px 5px #a63d59);
+}
+body header div .task1 {
+  background-image: url(./img/icon/media-icon.png);
+}
+body header div .task2 {
+  background-image: url(./img/icon/form-icon.png);
+}
+body header div .task3 {
+  background-image: url(./img/icon/elements-icon.png);
+}
+body main {
+  width: 80vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+body .form-sent {
+  overflow: hidden;
+  height: 90vh;
+}
+body .form-sent img {
+  width: 300px;
+}
+body .form-sent a {
+  margin-top: 20px;
+  color: #a63d59;
+}
+body ._form3 {
+  overflow-x: hidden;
+}
+body ._form3 fieldset {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px dashed #a63d59;
+  border-radius: 15px;
+  background-color: rgba(74, 14, 28, 0.9);
+  color: #eebcc8;
+  accent-color: #a63d59;
+}
+body ._form3 fieldset legend {
+  font-family: "Roboto Slab", serif;
+  color: #eebcc8;
+  background-color: #a63d59;
+  padding: 5px;
+  border-radius: 5px;
+}
+body ._form3 fieldset div,
+body ._form3 fieldset p {
+  font-family: "Montserrat", sans-serif;
+  margin: 10px;
+}
+body ._form3 fieldset p {
+  font-weight: bold;
+  color: #c86481;
+}
+body ._form3 fieldset .row input:not(input[type=radio], input[type=checkbox]),
+body ._form3 fieldset .row textarea,
+body ._form3 fieldset .row progress,
+body ._form3 fieldset .row select,
+body ._form3 fieldset .row meter {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 12px;
+  background-color: #fcf4f7;
+  border: 2px solid #a63d59;
+}
+body ._form3 fieldset .row progress {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  border: none;
+}
+body ._form3 fieldset .row progress::-webkit-progress-bar {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+body ._form3 fieldset .row progress::-webkit-progress-value {
+  background-color: #a63d59;
+  border-radius: 20px;
+}
+body ._form3 fieldset .row textarea {
+  height: 60px;
+}
+body ._form3 fieldset .row .inline-group {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+body ._form3 fieldset .row .inline-group label,
+body ._form3 fieldset .row .inline-group span {
+  margin-right: 50px;
+}
+body ._form3 button {
+  background-color: #a63d59;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+body ._form3 input[type=reset],
+body ._form3 input[type=submit] {
+  margin-right: 20px;
+  padding: 18px;
+  border: 2px solid #a63d59;
+  border-radius: 20px;
+  color: #a63d59;
+  background-color: transparent;
+  cursor: pointer;
+}
+body .main {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./img/bgi.jpg);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+body .main h1 {
+  font-size: 46px;
+}
+body .main .task-container {
+  width: 80vw;
+  height: 340px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .task-container a {
+  text-decoration: none;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body .main .task-container a img {
+  width: 200px;
+}
+body .main .task-container a:hover img {
+  transform: translateY(-5px);
+  filter: drop-shadow(5px 5px 5px #a63d59);
+}
+body .main .task-btn {
+  height: 60px;
+  width: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .main-task1 {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+body .main-task1 video {
+  width: 300px;
+  border-radius: 20px;
+}
+body .main-task1 .audio-container {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+body .main-task1 .audio-container audio {
+  width: 100%;
+}
+body .task2-main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+body .task2-main h1 {
+  margin-bottom: 80px;
+}
+body .task2-main div {
+  height: 340px;
+  width: 70vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .task2-main div a {
+  width: 400px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+body .task2-main div a img {
+  height: 300px;
+}
+body .task2-main div a p {
+  font-size: 24px;
+}
+body ._form-main {
+  width: 80vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+body ._form-main form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+body ._form-main form table {
+  width: 100%;
+  min-height: 400px;
+  margin-bottom: 20px;
+}
+body ._form-main form table caption {
+  font-size: 34px;
+}
+body ._form-main form table td,
+body ._form-main form table th {
+  padding: 10px;
+}
+body ._form-main form table th h3 {
+  margin: 0;
+}
+body ._form-main form table td {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body ._form-main form table td input[type=text],
+body ._form-main form table td input[type=password],
+body ._form-main form table td textarea,
+body ._form-main form table td select {
+  height: 30px;
+  width: 100%;
+  min-width: 300px;
+  padding: 5px;
+  border: 2px solid #a63d59;
+  border-radius: 5px;
+}
+body ._form-main form table label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+body ._form-main form table label input[type=radio],
+body ._form-main form table label input[type=checkbox] {
+  accent-color: #a63d59;
+}
+body ._form-main form button {
+  background-color: #a63d59;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+body ._form-main form button[type=reset] {
+  margin-right: 20px;
+  padding: 18px;
+  border: 2px solid #a63d59;
+  color: #a63d59;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */

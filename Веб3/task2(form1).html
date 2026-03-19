@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./task2.html" class="arrow"></a>
+    </header>
+    <main class="_form-main _form-1">
+      <form action="./form_sent.html" method="get">
+        <table>
+          <caption>
+            реєстрація
+          </caption>
+          <tr>
+            <th><h3>логін:</h3></th>
+            <td><input type="text" required /></td>
+          </tr>
+          <tr>
+            <th><h3>пароль:</h3></th>
+            <td><input type="password" required /></td>
+          </tr>
+          <tr>
+            <th><h3>повторіть пароль:</h3></th>
+            <td><input type="password" required /></td>
+          </tr>
+          <tr>
+            <th><h3>стать:</h3></th>
+            <td class="gender-pool">
+              <label for="woman">
+                <input type="radio" name="gender" checked /> жінка
+              </label>
+
+              <label for="man">
+                <input type="radio" name="gender" /> чоловік
+              </label>
+
+              <label for="other"
+                ><input type="radio" name="gender" /> інше
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th><h3>вкажіть країну:</h3></th>
+            <td>
+              <select name="conutries" id="">
+                <option value="" disabled selected hidden>--</option>
+                <option value="ukraine">Україна</option>
+                <option value="canada">Канада</option>
+                <option value="korea">Корея</option>
+                <option value="germany">Німеччина</option>
+                <option value="france">Франція</option>
+                <option value="italy">Італія</option>
+                <option value="spain">Іспанія</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th><h3>про себе:</h3></th>
+            <td><textarea name="about-me" id=""></textarea></td>
+          </tr>
+        </table>
+        <button type="submit">надіслати</button>
+      </form>
+    </main>
+  </body>
+</html>

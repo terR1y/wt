@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ресторан</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="arrow"></a>
+    </header>
+
+    <main>
+      <form class="_form-main _form3" action="./form_sent.html" method="get">
+        <h2>анкета відвідувача "Claude Monet"</h2>
+
+        <fieldset>
+          <legend>основна інформація</legend>
+
+          <div class="row">
+            <label>ваше ім'я та прізвище:</label>
+            <input type="text" placeholder=" ім'я, прізвище" required />
+          </div>
+
+          <div class="row">
+            <label for="city-choice">Місто проживання:</label>
+            <input
+              list="citys"
+              id="city-choice"
+              name="city"
+              placeholder="--"
+              required
+            />
+
+            <datalist id="citys">
+              <option value="Запоріжжя"></option>
+              <option value="Житомир"></option>
+              <option value="Вінниця"></option>
+              <option value="Хмельницький"></option>
+              <option value="Івано-Франківськ"></option>
+              <option value="Одеса"></option>
+              <option value="Чернігів"></option>
+              <option value="Рівне"></option>
+            </datalist>
+          </div>
+
+          <div class="row">
+            <label>дата візиту:</label>
+            <input type="date" />
+          </div>
+
+          <div class="row">
+            <label>кількість гостей:</label>
+            <input type="number" min="1" max="20" value="1" />
+          </div>
+
+          <div class="row">
+            <label>ваш улюблений фрукт(фрукти):</label>
+
+            <select multiple style="height: 80px">
+              <option value="apple">Яблуко</option>
+              <option value="banana">Банан</option>
+              <option value="cherry">Вишня</option>
+              <option value="orange">Апельсин</option>
+            </select>
+          </div>
+          <div class="row">
+            <label>ваш улюблений зал:</label>
+            <select>
+              <optgroup label="в приміщенні">
+                <option>основна зала</option>
+                <option>VIP-кімната</option>
+              </optgroup>
+              <optgroup label="на вулиці">
+                <option>тераса</option>
+                <option>сад</option>
+              </optgroup>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>оцінка сервісу</legend>
+
+          <div class="row">
+            <label>загальне враження (0-5):</label>
+            <input
+              type="range"
+              min="0"
+              max="5"
+              value="5"
+              oninput="this.nextElementSibling.value = this.value"
+            />
+            <output for="volume">5</output>
+          </div>
+
+          <div class="row">
+            <label>чи порекомендуєте нас друзям?</label>
+            <div class="inline-group">
+              <input type="radio" name="rec" value="yes" checked />
+              <label for="yes">так</label>
+              <input type="radio" name="rec" value="no" />
+              <label for="no">ні</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <label>що вам сподобалось?</label>
+            <div class="inline-group">
+              <input type="checkbox" /> <span>кухня</span>
+              <input type="checkbox" /> <span>музика</span>
+              <input type="checkbox" /> <span>ціни</span>
+              <input type="checkbox" checked /><span>шеф</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>додатково</legend>
+
+          <div class="row">
+            <label>яку страву ви замовляли?:</label>
+            <input list="dishes" name="dish" placeholder="(почніть писати)" />
+            <datalist>
+              <option value="борщ"></option>
+              <option value="вареники з картоплею"></option>
+              <option value="фрітату"></option>
+              <option value="пампушки з часником"></option>
+              <option value="жульєн"></option>
+              <option value="смажена картопля"></option>
+            </datalist>
+          </div>
+
+          <div class="row">
+            <label>оберіть колір вашого настрою сьогодні:</label>
+            <input type="color" value="#ff0000" />
+          </div>
+
+          <div class="row">
+            <label>ваші побажання:</label>
+            <textarea
+              rows="4"
+              placeholder="напишіть тут... "
+              spellcheck="true"
+            ></textarea>
+          </div>
+
+          <div class="row">
+            <label>заповнення анкети:</label>
+            <progress value="85" max="100"></progress>
+          </div>
+
+          <div class="row">
+            <label>людність залу:</label>
+            <meter
+              min="0"
+              max="100"
+              low="30"
+              high="80"
+              optimum="50"
+              value="65"
+            ></meter>
+          </div>
+          <div class="row">
+            <input
+              type="text"
+              placeholder="♡𐔌՞･·･՞𐦯"
+              disabled
+              style="background-color: rgb(198, 198, 198)"
+            />
+          </div>
+        </fieldset>
+
+        <div style="display: flex; gap: 10px; justify-content: center">
+          <input type="submit" value="надіслати" />
+          <input type="reset" value="очистити" />
+          <button type="button" onclick="alert('૮₍｡• ༝ •｡ ₎ა ₊˚🍮୧˚ ⋆୨୧⋆｡˚')">
+            просто кнопка
+          </button>
+        </div>
+        <fieldset>
+          <legend>актуальне:</legend>
+          <h3 style="color: #fcf4f7">
+            Шукаєш роботу? А ми шукаємо відповідальних співробітників!
+          </h3>
+          <p>Залиш своє резюме і номер нижче:</p>
+          <div class="row">
+            <label for="phone">номер телефону:</label>
+            <input type="number" placeholder="+380 (XX) XXX-XXXX" />
+          </div>
+          <div class="row">
+            <label for="resume">резюме</label>
+            <input type="file" multiple style="height: 50px; padding: 12px" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
